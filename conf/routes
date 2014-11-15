@@ -1,0 +1,6 @@
+GET     /                                controllers.Application.index
+GET     /room                            controllers.Application.chatRoom(username: Option[String])
+GET     /room/chat                       controllers.Application.chat(username)
+GET     /assets/javascripts/chatroom.js  controllers.Application.chatRoomJs(username: String)
+
+GET     /assets/*file                    controllers.Assets.at(path="/public", file)
